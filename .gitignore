@@ -1,0 +1,26 @@
+# Java / Maven
+BusTicketBookingSystem/target/
+BusTicketBookingSystem/.mvn/wrapper/maven-wrapper.jar
+BusTicketBookingSystem/*.iml
+BusTicketBookingSystem/.idea/
+BusTicketBookingSystem/HELP.md
+
+# Frontend / React
+busticketbookingsystem_FE/**/node_modules/
+busticketbookingsystem_FE/**/dist/
+busticketbookingsystem_FE/**/dist-ssr/
+busticketbookingsystem_FE/**/.local
+busticketbookingsystem_FE/**/*.env*
+
+# Sensitive Configs (Secondary protection)
+**/application.properties
+!**/application.properties.example
+
+# IDEs & System
+.idea/
+.vscode/
+*.iws
+*.ipr
+*.sw?
+.DS_Store
+Thumbs.db

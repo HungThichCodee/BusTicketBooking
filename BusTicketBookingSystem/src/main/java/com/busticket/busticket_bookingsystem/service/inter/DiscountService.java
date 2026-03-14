@@ -1,0 +1,28 @@
+package com.busticket.busticket_bookingsystem.service.inter;
+
+
+import com.busticket.busticket_bookingsystem.dto.response.PageResponse;
+import com.busticket.busticket_bookingsystem.entity.booking.Discount;
+
+import java.util.List;
+
+public interface DiscountService {
+
+    Discount findById(Long id);
+
+    Discount findByCode(String code);
+
+    List<Discount> findAll();
+
+    List<Discount> findAllAvailable();
+
+    PageResponse<Discount> findAll(Integer page, Integer limit);
+
+    Discount save(Discount discount);
+
+    Discount update(Discount discount);
+
+    String delete(Long id);
+
+    Boolean checkDuplicateDiscountInfo(String mode, Long discountId, String field, String value);
+}
